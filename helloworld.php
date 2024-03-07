@@ -8,7 +8,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($curl, CURLOPT_HEADER, 0);
 // curl_setopt($curl, CURLOPT_URL, $url);
 
-$result = curl_exec($curl;);
+$result = curl_exec($curl);
 
 echo $result;
 ?>
