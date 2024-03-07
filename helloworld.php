@@ -12,5 +12,5 @@ $result = curl_exec($curl);
 
 $hash = json_decode($result);
 echo var_dump($hash);
-echo $hash->message();
+echo $hash->Message();
 ?>
