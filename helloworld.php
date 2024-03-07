@@ -10,5 +10,5 @@ curl_setopt($curl, CURLOPT_HEADER, 0);
 
 $result = curl_exec($curl);
 
-echo $result;
+echo json_decode($result);
 ?>
