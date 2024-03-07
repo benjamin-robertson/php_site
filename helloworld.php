@@ -10,5 +10,6 @@ curl_setopt($curl, CURLOPT_HEADER, 0);
 
 $result = curl_exec($curl);
 
-echo json_decode($result);
+$hash = json_decode($result);
+echo $hash;
 ?>
