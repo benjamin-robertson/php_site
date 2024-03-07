@@ -14,5 +14,5 @@ $hash = json_decode($result);
 // echo var_dump($hash);
 echo $hash->message;
 
-echo "<img src=${hash->message} alt='todays doge'>";
+echo "<img src={$hash->message} alt='todays doge'>";
 ?>
