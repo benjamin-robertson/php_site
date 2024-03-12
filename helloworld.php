@@ -19,6 +19,6 @@ echo __line__;
 echo __dir__;
 echo '</br>;'
 
-$my_hash = {'test' => 'test123'};
-echo var_dump($my_hash);
+// $my_hash = { 'test' => 'test123' };
+// echo var_dump($my_hash);
 ?>
