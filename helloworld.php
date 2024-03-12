@@ -15,4 +15,5 @@ $hash = json_decode($result);
 // echo $hash->message;
 
 echo "<img src={$hash->message} alt='todays doge'>";
+echo __line__;
 ?>
