@@ -6,6 +6,6 @@
 // Write the contents of $firstName out to the file "FILE_NAME"
 file_put_contents(FILE_NAME, $firstName);
 // echo the OS family you are using
-echo ?;
+echo $PHP_OS;
 // echo the name of the current directory
-echo ?;
+echo __dir__;
