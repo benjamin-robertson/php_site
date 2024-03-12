@@ -9,4 +9,4 @@ $mission = [
     ]
 ];
 // How would you access the Computer Specialist's first name?
-echo $mission['STS395'][2]['specialty'];
+echo $mission['STS395'][2]['firstName'];
