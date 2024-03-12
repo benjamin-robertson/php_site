@@ -17,4 +17,8 @@ $hash = json_decode($result);
 echo "<img src={$hash->message} alt='todays doge'>";
 echo __line__;
 echo __dir__;
+echo '</br>;'
+
+$my_hash = {'test' => 'test123'}
+echo var_dump($my_hash);
 ?>
