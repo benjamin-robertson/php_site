@@ -1,5 +1,12 @@
 <?php
-// An astronaut array assignment
-$astronaut = ['firstName' => 'Mark', 6 => 'Watney', 5 => 'Botanist', 'STS395'];
-// Access the last element value
-echo $astronaut[7] . '';
+// Build the crew
+$mission = [
+    'STS395' => [
+        ['firstName' => 'Mark', 'lastName' => 'Watney', 'specialty' => 'Botanist'],
+        ['firstName' => 'Melissa', 'lastName' => 'Lewis', 'specialty' => 'Commander'],
+        ['firstName' => 'Beth', 'lastName' => 'Johanssen', 'specialty' => 'Computer Specialist']
+        // How would you add a new crew member?
+    ]
+];
+// How would you access the Computer Specialist's first name?
+echo $mission['STS395'][2]['specialty'];
