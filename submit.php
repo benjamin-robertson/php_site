@@ -29,7 +29,7 @@ if ($_POST) {
         $error[] = ERR_PASSWORD;
     }
     echo "</br> This is error array $error";
-    phpinfo(INFO_VARIABLES);
+    phpinfo();
 } else {
     echo 'Unhappy';
 }
