@@ -8,7 +8,7 @@
 <?php
 function check_result($valid, $error) { ?>
     <hr />
-    <?php if $valid != 3 { ?>
+    <?php if ($valid != 3) { ?>
         <b style="color:red;">There are some problems</b>
         <ul><li>
         <?= implode('</li><li>', $error); ?>
