@@ -1,3 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Verification page</title>
+</head>
+<body>
+<?php
+function check_result($valid, $error) { ?>
+    <hr />
+    <?php if $valid != 3 { ?>
+        <b style="color:red;">There are some problems</b>
+        <ul><li>
+        <?= implode('</li><li>', $error); ?>
+        </li></ul>
+    <?php else { ?>
+        <b style="color:green:">You have successfully signed up!</b>
+        <?php
+    }
+    }
+}
+?>
+</body>
+</html>
+
 <?php
 // const ERR_USERNAME = 'Username must be between 6 and 8 characters';
 define('ERR_USERNAME', 'Username must be between 6 and 8 characters');
@@ -38,28 +63,3 @@ if ($_POST) {
 } else {
     echo 'Unhappy';
 }
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<title>Verification page</title>
-</head>
-<body>
-<?php
-function check_result($valid, $error) { ?>
-    <hr />
-    <?php if $valid != 3 { ?>
-        <b style="color:red;">There are some problems</b>
-        <ul><li>
-        <?= implode('</li><li>', $error); ?>
-        </li></ul>
-    <?php else { ?>
-        <b style="color:green:">You have successfully signed up!</b>
-        <?php
-    }
-    }
-}
-?>
-</body>
-</html>
