@@ -9,6 +9,7 @@ if ($_POST) {
     phpinfo(INFO_VARIABLES);
     echo "</br> $email";
     echo "</br> $username";
+    echo "</br> $password";
 } else {
     echo 'Unhappy';
 }
