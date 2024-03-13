@@ -10,6 +10,12 @@ if ($_POST) {
     echo "</br> $email";
     echo "</br> $username";
     echo "</br> $password";
+    // Check username length between 6 - 8 characters
+    if (!empty($email) && strlen($email) >= 6 && strlen($email) <= 8) {
+        echo "</br> username valid: $email";
+    } else {
+        echo "</br> username invalid: $email";
+    }
 } else {
     echo 'Unhappy';
 }
