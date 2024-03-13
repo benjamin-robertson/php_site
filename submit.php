@@ -24,7 +24,7 @@ if ($_POST) {
     } else {
         $error[] = ERR_EMAIL;
     }
-    if (!empty($password) && strlen($password) >= 6) {
+    if (!empty($password) && strlen($password) >= 6 && ctype_alnum($password)) {
         echo "</br> password valid: $password";
     } else {
         $error[] = ERR_PASSWORD;
