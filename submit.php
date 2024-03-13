@@ -38,7 +38,7 @@ if ($_POST) {
     echo "</br> $username";
     echo "</br> $password";
     // Check username length between 6 - 8 characters
-    if (!empty($username) && strlen($username) >= 6 && strlen($username) <= 8) {
+    if (!empty($username) && strlen($username) >= 6 && strlen($username) <= 8 && ctype_alnum($username)) {
         echo "</br> username valid: $username";
         $valid++;
     } else {
@@ -50,7 +50,7 @@ if ($_POST) {
     } else {
         $error[] = ERR_EMAIL;
     }
-    if (!empty($password) && strlen($password) >= 6 && ctype_alnum($password)) {
+    if (!empty($password) && strlen($password) >= 6) {
         echo "</br> password valid: $password";
         $valid++;
     } else {
