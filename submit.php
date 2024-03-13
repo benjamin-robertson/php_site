@@ -17,7 +17,6 @@ function check_result($valid, $error) { ?>
         <b style="color:green:">You have successfully signed up!</b>
         <?php
     }
-    }
 }
 ?>
 </body>
