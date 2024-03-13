@@ -6,7 +6,6 @@ if ($_POST) {
     $email = trim(filter_var($_POST['email'], FILTER_SANITIZE_EMAIL)) ?? '';
     $username = trim(strip_tags(filter_var($_POST['username'], FILTER_SANITIZE_STRING))) ?? '';
     $password = trim($_POST['password']) ?? '';
-    phpinfo(INFO_VARIABLES);
     echo "</br> $email";
     echo "</br> $username";
     echo "</br> $password";
@@ -27,6 +26,7 @@ if ($_POST) {
         $error[] = ERR_PASSWORD;
     }
     echo "</br> This is error array $error";
+    phpinfo(INFO_VARIABLES);
 } else {
     echo 'Unhappy';
 }
