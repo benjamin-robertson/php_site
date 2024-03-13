@@ -21,5 +21,5 @@
 </html>
 <?php
 phpinfo(INFO_VARIABLES);
-echo "</br> $_POST['email']";
+echo "</br> ${_POST['email']}";
 ?>
