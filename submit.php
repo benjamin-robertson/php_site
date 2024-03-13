@@ -16,21 +16,50 @@ if ($_POST) {
     // Check username length between 6 - 8 characters
     if (!empty($username) && strlen($username) >= 6 && strlen($username) <= 8) {
         echo "</br> username valid: $username";
+        $valid++
     } else {
         $error[] = ERR_USERNAME;
     }
     if (!empty($email) && filter_var($email, FILTER_SANITIZE_EMAIL)) {
         echo "</br> email valid: $email";
+        $valid++
     } else {
         $error[] = ERR_EMAIL;
     }
     if (!empty($password) && strlen($password) >= 6 && ctype_alnum($password)) {
         echo "</br> password valid: $password";
+        $valid++
     } else {
         $error[] = ERR_PASSWORD;
     }
     echo "</br> This is error array ${var_dump($error)}";
     phpinfo(INFO_VARIABLES);
+    check_result($valid, $error)
 } else {
     echo 'Unhappy';
 }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Verification page</title>
+</head>
+<body>
+<?php
+function check_result($valid, $error) { ?>
+    <hr />
+    <?php if $valid != 3 { ?>
+        <b style="color:red;">There are some problems</b>
+        <ul><li>
+        <?= implode('</li><li>', $error); ?>
+        </li></ul>
+    <?php else { ?>
+        <b style="color:green:">You have successfully signed up!</b>
+        <?php
+    }
+    }
+}
+?>
+</body>
+</html>
