@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Lab: Interactive Web Forms</title>
+<title>Sign up page</title>
 </head>
 <body>
 <h1>New User Signup</h1>
