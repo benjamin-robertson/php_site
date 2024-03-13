@@ -28,7 +28,7 @@ if ($_POST) {
     } else {
         $error[] = ERR_PASSWORD;
     }
-    echo "</br> This is error array var_dump($error)";
+    echo "</br> This is error array ${var_dump($error)}";
     phpinfo(INFO_VARIABLES);
 } else {
     echo 'Unhappy';
