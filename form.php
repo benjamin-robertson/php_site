@@ -1,5 +1,3 @@
-<?php
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +7,7 @@
 <body>
 <h1>New User Signup</h1>
 <hr />
-<form action="form.php" method="post">
+<form action="submit.php" method="post">
 <table>
     <tr><th>Email</th><td><input type="email" name="email" /></td></tr>
     <tr><th>Username</th><td><input type="text" name="username" /></td></tr>
@@ -19,7 +17,3 @@
 </form>
 </body>
 </html>
-<?php
-phpinfo(INFO_VARIABLES);
-echo "</br> ${_POST['email']}";
-?>
