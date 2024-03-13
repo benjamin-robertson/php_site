@@ -13,7 +13,7 @@ function check_result($valid, $error) { ?>
         <ul><li>
         <?= implode('</li><li>', $error); ?>
         </li></ul>
-    <?php else { ?>
+    <?php } else { ?>
         <b style="color:green:">You have successfully signed up!</b>
         <?php
     }
