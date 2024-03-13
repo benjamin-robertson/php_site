@@ -14,8 +14,19 @@ if ($_POST) {
     if (!empty($username) && strlen($username) >= 6 && strlen($username) <= 8) {
         echo "</br> username valid: $username";
     } else {
-        echo "</br> username invalid: $username";
+        $error[] = ERR_USERNAME;
     }
+    if (!empty($email) && filter_var($email, FILTER_SANITIZE_EMAIL)) {
+        echo "</br> email valid: $email";
+    } else {
+        $error[] = ERR_EMAIL;
+    }
+    if (!empty($password) && strlen($password) <= 6) {
+        echo "</br> password valid: $password";
+    } else {
+        $error[] = ERR_PASSWORD;
+    }
+    echo "</br> This is error array $error"
 } else {
     echo 'Unhappy';
 }
