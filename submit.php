@@ -16,25 +16,25 @@ if ($_POST) {
     // Check username length between 6 - 8 characters
     if (!empty($username) && strlen($username) >= 6 && strlen($username) <= 8) {
         echo "</br> username valid: $username";
-        $valid++
+        $valid++;
     } else {
         $error[] = ERR_USERNAME;
     }
     if (!empty($email) && filter_var($email, FILTER_SANITIZE_EMAIL)) {
         echo "</br> email valid: $email";
-        $valid++
+        $valid++;
     } else {
         $error[] = ERR_EMAIL;
     }
     if (!empty($password) && strlen($password) >= 6 && ctype_alnum($password)) {
         echo "</br> password valid: $password";
-        $valid++
+        $valid++;
     } else {
         $error[] = ERR_PASSWORD;
     }
     echo "</br> This is error array ${var_dump($error)}";
     phpinfo(INFO_VARIABLES);
-    check_result($valid, $error)
+    check_result($valid, $error);
 } else {
     echo 'Unhappy';
 }
