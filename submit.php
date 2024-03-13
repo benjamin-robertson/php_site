@@ -1,5 +1,6 @@
 <?php
-const ERR_USERNAME = 'Username must be between 6 and 8 characters';
+// const ERR_USERNAME = 'Username must be between 6 and 8 characters';
+define(ERR_USERNAME, 'Username must be between 6 and 8 characters');
 const ERR_EMAIL = 'email must be valid';
 const ERR_PASSWORD = 'Password must be at least 6 characters';
 if ($_POST) {
