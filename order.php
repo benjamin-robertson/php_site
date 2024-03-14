@@ -1,3 +1,3 @@
 <?php
-$value = "hello" . " ben";
+$value = "hello" . "2" + 2;
 echo $value;
