@@ -1,4 +1,4 @@
 <?php
 // $value = "hello" . ("2" + 2);
-$value = "1" + 2 . "hello";
+$value = "hello" . "2" - 5;
 echo $value;
